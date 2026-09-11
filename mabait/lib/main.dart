@@ -12,7 +12,30 @@ class MyApp extends StatelessWidget{
         debugShowCheckedModeBanner: false,
         home: Scaffold(
           body: Center (
-            child: Text("Jazper M. Escoto")
+            child: Column(
+            mainAxisAlignment: MainAxisAlignment.center,
+            crossAxisAlignment: CrossAxisAlignment.center,
+             children: [
+             const Icon(
+               Icons.account_circle,
+               size: 100,
+               color: Colors.purple,
+             ),
+             const SizedBox(height: 10),
+             const Text('Jazper M. Escoto'),
+               style: TextStyle(
+                 fontSize: 50,
+                 fontWeight: FontWeight.bold,
+                 color: Colors.purple
+               ),
+            ),
+            Text('Bachelor of Science in Information Technology'),
+            SizedBox(height: 20),
+            Coloumn(
+              mainAxisAlignment: mainAxisAlignment
+            )
+            ],
+          ),
           ),
         ),
       );
